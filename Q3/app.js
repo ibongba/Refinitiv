@@ -23,7 +23,8 @@ if(!fund_name){
   var value = 'Not found';
   for(let i = 0 ; i < rows.length ; i++){
     if(rows[i].rawText.trim() === fund_name.trim()){
-      value = rows[i+1]? rows[i+1].rawText : value
+      value = rows[i+1]? rows[i+1].rawText : value;
+      break;
     }
   }
   // for(const row of rows){
